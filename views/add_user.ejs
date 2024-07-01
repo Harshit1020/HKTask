@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body>
+    <div class="container">
+
+    
+    <div class="Addrect">
+        <div class="addform">
+            <form class="login-form" method="post" action="/add_user" name="form">
+                <h2>Add user<h2>           
+                <hr>
+                <br>
+                <input name="name" type="text" placeholder="Name" /><br>
+
+                <input name="email" type="email" placeholder="email" id="email" /><br>
+
+                <input name="mobile_number" type="number" onkeyup="phoneNumber(document.form.mobile)" placeholder="Mobile Number"
+                    id="mobile" /><br>
+                <small style="color: red;">Enter vaild mobile number</small><br>
+                <button class="addbtn">Add</button>
+                <a id="h" href="/backtohome">BacktoHome</a>
+            </form>
+            
+        </div>
+    </div>
+    </div>
+
+    <script>
+        var mobile = document.querySelector('#mobile')
+
+        function phoneNumber(mobile) {
+            var phone_regex = /^\d{10}$/;
+            if ((mobile.value.match(phone_regex))) {
+                document.querySelector('small').style.display = 'none'
+                return true
+            } else {
+                document.querySelector('small').style.display = 'block'
+                return false
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.admin .btn {
+  display: block;
+  margin: 10px 0;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.admin .btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.Addrect{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 30%;
+  height: 53%;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 20px;
+  text-align: center;
+  
+}
+.addform{
+ 
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  text-align: center;
+  
+}
+.addbtn{
+  border-radius: 5px;
+  padding: 2px 20px;
+  background-color: rgba(155, 109, 109, 0.877);
+}
+a{
+  font-size: 15px;
+  color: blue;
+
+  
+}
+.addform input,
+select {
+  border: 1px solid black;
+  outline: 0;
+  width: 100%;
+  border-radius: 5px;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.addform input:focus {
+  background: #dbdbdb;
+}  
+
+.addform input[type="radio"] {
+  width: 10%;
+  background-color: #111;
+}
+
+.addform button,
+button {
+  text-transform: uppercase;
+  outline: 0;
+  background: #7e7e7e;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.addform button:active {
+  background: #395591;
+}
+
+.addform span {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+small{
+  display: none;
+}   
+
+.task{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 30%;
+  height: 50%;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 20px;
+  text-align: center;
+  
+}
+.taskform input{
+   border-radius: 5px;
+   text-align: center;
+   padding: 5px;
+  }
+
+
+
